@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    color: #E1E5EE;
+}
+
+a{
+    text-decoration: none;
+    color: #E1E5EE;
+}
+
+body{
+    background-color: black;
+    color: #E1E5EE;
+    display:grid;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #242321;
+}
+
+.logo img{
+    width: 6vh;
+}
+
+.navbar a{
+    font-size: 2vh;
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    line-height: 46px;
+    animation: slideTop 1s ease forwards;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: #CA2826;
+}
+
+#menu-icon{
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#home{
+    height: 80vh;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 10%;
+    background-image: url(./img/llantas.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 40%;
+}
+
+h1{
+    margin-top: 20vh;
+    font-size: 6vh;
+    margin-bottom: 50px;
+}
+h1 span{
+    color: #CA2826;
+    font-size: 8vh;
+}
+
+p span{
+    color: #CA2826;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.home-content p{
+    font-size: 3vh;
+}
+
+.home-img img{
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.home-content{
+    max-width: 70vh;
+    max-height: calc(100vh - 400px);
+    display:inline;
+}
+
+#info{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 1px 10%;
+    margin: 20vh 0;
+}
+
+#info img{
+    width: 30vw;
+}
+
+#info  p{
+    font-size: 22px;
+    text-align: justify;
+}
+#info  p span{
+    color: #CA2826;
+    font-size: 26px;
+}
+
+.info-text{
+    margin: 0 10%;
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #menu-icon{
+        display: block;
+        transition: 0.5s ease;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #242321;
+        display: none;
+        border-bottom: solid 4px #161513;
+        box-shadow: 0 .5rem 1rem #161513;
+    }
+    .navbar.active{
+        display: block;
+        animation: Navingbar ease 0.5s;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2.7vh;
+        margin: 3rem 0;
+    }
+    .header{
+        padding: 5px 10vw;
+    }
+
+    .home{
+        flex-direction: column;
+        padding-top: 60%;
+        height: 100vh;
+    }
+
+    .home-img img{
+        width: 100vw;
+        margin-top: 2rem;
+    }
+
+    #info{
+        flex-direction: column-reverse;
+        margin: 40vh 0;
+        padding: 0;
+    }
+
+    #info p{
+        font-size: 2.5vh;
+        width: 100%;
+    }
+    #info p span{
+        font-size: 2.9vh;
+    }
+    .info-text{
+        width: 100%;
+    }
+    
+    #info img{
+        margin-top: 10vh;
+        width: 60vw;
+    }
+    
+}
+
+
