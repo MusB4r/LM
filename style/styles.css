@@ -173,11 +173,11 @@ header img{
 }
 .box h3{
     color: var(--color4);
-    font-family: 'Lobster', cursive;
+    font-family: 'Bebas Neue', cursive;
     text-align: center;
-    font-size: 3vh;
+    font-size: 6vh;
     margin-bottom: 5%;
-    font-weight: 600;
+    font-weight: 100;
 }
 
 
@@ -238,9 +238,18 @@ input[type=number] { -moz-appearance:textfield; }
     padding-bottom: 70px;
 }
 #Autos{
+    padding: 5% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#Info{
+    padding: 10% 0;
+}
+
+#Contact{
+    padding: 10% 0;
 }
 
 .carrousel {
@@ -285,7 +294,7 @@ input[type=number] { -moz-appearance:textfield; }
 .carrousel .punto {
     width: 1.6em;
     height: 1.6em;
-    margin: 1em 1em 0;
+    margin: 1em 0.5em 0;
     background-color: var(--color5);
     transition: all 0.4s ease;
     border-radius: 1em;
@@ -323,6 +332,17 @@ footer{
     #menu-icon{
         display: block;
         transition: 0.5s ease;
+    }
+    #Info{
+        padding: 10% 0;
+    }
+
+    #Autos{
+        padding: 25% 0;
+    }
+    
+    #Contact{
+        padding: 5% 0;
     }
 
     #Home{
@@ -385,11 +405,12 @@ footer{
     .box{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
+        padding: 15%;
     }
 
     .box h3{
-        font-size: 13px;
+        font-size: 5vw;
     }
 
     .box p{
@@ -436,6 +457,12 @@ footer{
     }
 
 
+}
+
+@media only screen and (max-width: 1920px) {
+    .carrousel .img{
+        width: 12.5%;
+    }
 }
 
 
