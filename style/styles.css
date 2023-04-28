@@ -184,6 +184,11 @@ header img{
 .title{
     font-size: 8vh;
     text-align: center;
+    padding-bottom: 3%;
+}
+
+.title span{
+    color:var(--color2);
 }
 
 .contact form{
