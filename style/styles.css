@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+@font-face {
+    font-family: Burford, Sequel;
+    src: url(../fonts/Burford.ttf), url(../fonts/Sequel.ttf);
+}
+
+:root{
+    --color1: #010206;
+    --color2: #b61111;
+    --color3: #090B0F;
+    --color4: #970404;
+    --color5: #640404;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    color: #FEFEFE;
+    list-style: none;
+}
+section{
+    margin: 0 10%;
+    padding: 5% 0;
+}
+
+html{
+    background-color: var(--color1);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10%;
+    max-height: 90px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: var(--color1);
+}
+
+header img{
+    margin-top: 20px;
+    width: 5vh;
+}
+
+.navbar a{
+    font-size: 2vh;
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    line-height: 46px;
+    animation: slideTop 1s ease forwards;
+}
+#menu-icon{
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.home{
+    background-image: url(../img/background.png);
+    background-size: 60%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.home .title{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.headrojo   {
+    letter-spacing: 15px;
+    color: var(--color2);
+    font-size: 1.5vw;
+    font-family: Burford;
+    font-weight: 100;
+}
+.home .title h1{
+    font-family: 'Bebas Neue', cursive;;
+    font-weight: 800;
+    font-size: 8vw;
+}
+.text2{
+    margin-left: 25%;
+}
+
+.p{
+    padding: 40px;
+    width: 40vh;
+    margin-top: 20px;
+}
+
+.enlaces{
+    width: 20%;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlaces i{
+    font-size: 3vw;
+    color: #b61111;
+    animation: floatimg 4s ease-in-out infinite; 
+}
+
+.p p{
+    font-size: 2vh;
+    text-align: justify;
+}
+
+.infoheader{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.infoheader h1{
+    font-size: 8vw;
+    margin-bottom: 0;
+}
+
+.infoheader p{
+    padding-top: 20%;
+    font-size: 2vh;
+    width: 60%;
+    text-align: right;
+}
+
+.infocontainer{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-gap:5%;
+}
+.iconw i{
+    padding: 1vh;
+    position: fixed;
+    font-size: 6vh;
+    color: #f1faee;
+    background-color: #b61111;
+    border-radius: 50%;
+    bottom: 10vh;
+    right: 10vw;
+    box-shadow: 1px 5px 20px var(--color2);
+}
+
+.box{
+    text-align: center; 
+    flex: 1 1 30rem;
+    background: var(--color3);
+    padding: 30px;
+    border-radius: 2rem;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.box p{
+    text-align: justify;
+    font-size: 2vh;
+    font-weight: 300;
+}
+.box h3{
+    color: var(--color4);
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 3vh;
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+
+.title{
+    font-size: 8vh;
+    text-align: center;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.contact form .input-box #datos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input, .contact form textarea{
+    width: 98%;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #E1E5EE;
+    border-radius: .8rem;
+    border: none;
+    margin: .7rem 0;
+    background-color: var(--color3);
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .bton{
+    margin-top: 2rem;
+    cursor: pointer;
+    border: none;
+    padding: 15px 30px;
+    background-color: var(--color2);
+    border-radius: 30px;
+    font-size: 22px;
+}
+
+.h1 head{
+    font-size: 8vh;
+    text-align: center;
+    padding-bottom: 70px;
+}
+#Autos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrousel {
+    margin-top: 20px;
+    width: 40%;
+    max-width: 120em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden;
+}
+
+.carrousel .grande {
+    width: 800%;
+    display: flex;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+
+.carrousel .img {
+    width: 100%;
+    min-height: 10vh;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .puntos{
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .punto {
+    width: 1.6em;
+    height: 1.6em;
+    margin: 1em 1em 0;
+    background-color: var(--color5);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .punto.activo {
+    background-color: var(--color2);
+}
+
+
+
+footer{
+    height: 30px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+@keyframes floatimg{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(1);
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    #menu-icon{
+        display: block;
+        transition: 0.5s ease;
+    }
+
+    #Home{
+        margin-top: 80px;  
+    }
+
+    #Home p{
+        font-size: 2vw;
+        width: 30%;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background:var(--color1);
+        display: none;
+        box-shadow: 0 1rem 1rem var(--color2);
+    }
+    .navbar.active{
+        display: block;
+        animation: Navingbar ease 0.5s;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 0.6rem ;
+        margin: 0;
+    }
+    .header{
+        padding: 1rem 3rem;
+    }
+    
+    .infoheader{
+        flex-direction: column;
+    }
+
+    .infoheader p{
+        width: 70%;
+        font-size: 2vw;
+    }
+
+    .text3{
+        display: flex;
+        justify-content: end;
+    }
+
+    .enlaces{
+        width:30%;
+    }
+
+    .enlaces i{
+        font-size: 20px;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box h3{
+        font-size: 13px;
+    }
+
+    .box p{
+        font-size: 2vw;
+    }
+    
+    .title{
+        font-size: 30px;
+    }
+
+    #Contact form textarea , #Contact form label input{
+        font-size: 12px;
+    }
+
+    .iconw i{
+        font-size: 40px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+    .headrojo{
+        font-size: 12px;
+        text-align: left;
+    }
+    .carrousel .img {
+        width: 80vw;
+    }
+
+    .carrousel{
+        width: 100%;
+    }
+
+    .carrousel .punto {
+        margin: 10px;
+        width: 16px;
+        height: 16px;
+    }
+
+    #Contact form .bton{
+        font-size: 12px;
+        padding: 7px 15px;
+    }
+
+
+}
+
+
+
